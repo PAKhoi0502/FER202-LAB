@@ -1,0 +1,45 @@
+/* Thêm class home-container để giới hạn phạm vi của CSS */
+body {
+    background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+}
+
+.home-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: linear-gradient(to right, #e6dada, #274046);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Các phần carousel */
+.home-container .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Các thẻ card cho pizza và món ăn */
+.home-container .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-container .card:hover {
+    transform: scale(1.05);
+}
+
+.home-container .card-img-top {
+    object-fit: cover;
+}
+
+.home-container .container.my-5 {
+    background: linear-gradient(to right, #283c86, #45a247);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}

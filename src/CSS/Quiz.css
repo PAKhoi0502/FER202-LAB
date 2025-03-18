@@ -1,0 +1,93 @@
+/* Tổng thể container của Quiz */
+.quiz-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    /* Màu nền nhẹ cho Quiz */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề câu hỏi */
+.quiz-container h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Các lựa chọn trả lời */
+.answers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.answer-option {
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-option:hover {
+    background-color: #e0f7fa;
+}
+
+.answer-option.selected {
+    background-color: #80deea;
+    /* Màu sắc khi chọn đáp án */
+}
+
+/* Nút Next */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #b0bec5;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Kết quả */
+.result {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-top: 40px;
+}
+
+.result button {
+    margin-top: 20px;
+    background-color: #8bc34a;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.result button:hover {
+    background-color: #7cb342;
+}
